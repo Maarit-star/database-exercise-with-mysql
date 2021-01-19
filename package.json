@@ -1,0 +1,18 @@
+{
+  "name": "keskitalo_maarit_kissa_projekti",
+  "version": "1.0.0",
+  "description": "kissaprojekti",
+  "main": "kissapalvelin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mariadb": "^2.5.1"
+  }
+}

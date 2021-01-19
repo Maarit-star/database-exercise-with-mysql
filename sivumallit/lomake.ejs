@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="/tyylit/tyylit.css" type="text/css">
+    
+</head>
+<body>
+    <div class="heading"><h1><%= otsikko %></h1></div>
+        <div class="main">
+        <form action="<%= toiminto %>" method="POST">
+            <p class="syotaTiedotP">
+                <label for="numero">Numero:</label>
+                <input type="text" name="numero" id="numero" size="5"
+                value="<%= numero.arvo %>" required <%= numero.vainluku %> >
+                </p>
+                <p class="syotaTiedotP">
+                    <label for="nimi">Nimi:</label>
+                    <input type="text" name="nimi" id="nimi" size="20"
+                    value="<%= nimi.arvo %>" required <%= nimi.vainluku %> >
+                </p>
+                <p class="syotaTiedotP">
+                    <label for="rotu">Rotu:</label>
+                    <input type="text" name="rotu" id="rotu" size="20"
+                    value="<%= rotu.arvo %>" <%= rotu.vainluku %> >
+                </p>
+                <p class="syotaTiedotP">
+                    <label for="painoKg">PainoKg:</label>
+                    <input type="text" name="painoKg" id="painoKg" size="10"
+                    value="<%= painoKg.arvo %>" <%= painoKg.vainluku %> >
+                </p>
+                <p class="syotaTiedotP">
+                    <label for="pituus">Pituus:</label>
+                    <input type="text" name="pituus" id="pituus" size="10"
+                    value="<%= pituus.arvo %>" <%= pituus.vainluku %> >
+                </p>
+                <div>
+                    <div class="lahetaLuokka">
+                    <button type="submit" class="lahetaBtn">Lähetä</button>
+                </div>
+                </div>
+        </form>
+        <div class="valikkoonBtn">
+        <a href="/"><button class=buttonValikkoon>Valikkoon</button></a>
+        </div>
+    </div>
+</body>
+</html>

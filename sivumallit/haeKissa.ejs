@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tyylit/tyylit.css" type="text/css">
+    <title><%= paaotsikko %></title>
+</head>
+<body>
+    
+        <div class="heading"><h1><%= otsikko %></h1></div>
+        <div class="main">
+        <form action="<%= toiminto %>" method="POST">
+            <p class="haeKissaInputAlue">
+                <label for="numero">numero:</label>
+                <input type="text" id="numero" name="numero" size="5">
+            </p>
+            <div class="lahetaLuokka">
+            <button type="submit" class="lahetaBtn">Lähetä</button>
+            </div>
+        </form>
+        <div class="valikkoonBtn">
+        <a href="/"><button class="buttonValikkoon">Valikkoon</button></a>
+        </div>
+    </div>
+</body>
+</html>
